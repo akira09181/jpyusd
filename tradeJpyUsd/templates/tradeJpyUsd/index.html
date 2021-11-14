@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% block content %}
+<h1>TradeJpyUsd</h2>
+<p>ここでは、USDとJPYをインジケータを用いてトレードした場合どうなるのか、シミュレーションをします。</p>
+<form action={% url "TradeJpyUsd:Sma" %}>
+<button type = 'submit' value = "Simulation">
+</form>
+{% endblock content%}
